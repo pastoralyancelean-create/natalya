@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['DM Serif Display', 'serif'],
+                        cursive: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            darkRed: '#7A2E16',
+                            cream: '#F4DFB9',
+                            tan: '#B38465',
+                            lightCream: '#F9EAD2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .float-slow {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans antialiased overflow-x-hidden">
+
+    <section class="relative h-[60vh] md:h-[75vh] w-full overflow-hidden flex items-start justify-center pt-8 bg-black">
+        <div class="absolute inset-0 z-0 scale-105 transform transition-transform duration-[2000ms] hover:scale-100">
+            <img src="image.png" alt="Hero Background" class="w-full h-full object-cover object-[center_15%] opacity-70 sepia-[40%] contrast-[110%] brightness-[85%]">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-darkRed/20 via-transparent to-brand-darkRed/40"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 fade-up visible">
+            <h1 class="font-cursive italic text-2xl sm:text-3xl md:text-4xl text-stone-200 drop-shadow-md tracking-wide">
+                Road to Forever with
+            </h1>
+        </div>
+    </section>
+
+    <section class="bg-brand-darkRed text-stone-100 py-16 md:py-24 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+            <div class="md:col-span-7 space-y-6 fade-up">
+                <div class="w-12 h-12 text-stone-300/40 opacity-70 float-slow">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full">
+                        <path d="M12 2C11.5 2 10 5 10 9C10 14 6 16 6 16H18S14 14 14 9C14 5 12.5 2 12 2Z"/>
+                        <path d="M12 13V22" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-stone-200 font-light tracking-wide">
+                    Our First Met Story
+                </h2>
+                <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-light max-w-xl text-justify">
+                    Our story began in the most unexpected way. We first met at the town plaza, where I saw her crying and decided to approach her to make sure she was okay. That simple moment led to a conversation, which eventually grew into a beautiful relationship. What makes our love story special is that it started with kindness and has continued to grow through love, trust, and unwavering support for one another.
+                </p>
+            </div>
+            <div class="md:col-span-5 flex justify-center md:justify-end fade-up">
+                <div class="bg-[#FDFBF7] p-3 shadow-xl transform rotate-2 hover:rotate-0 transition-all duration-500 max-w-[280px] sm:max-w-[320px] border border-stone-200/50">
+                    <div class="overflow-hidden bg-stone-100 aspect-[3/4]">
+                        <img src="image.png" alt="First Met" class="w-full h-full object-cover object-[72%_22%] scale-150 transform transition-transform duration-700 hover:scale-[1.55]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-cream text-stone-800 py-16 md:py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/3 flex justify-center md:justify-start fade-up">
+                <div class="relative w-48 h-48 sm:w-56 sm:h-56 float-slow">
+                    <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-md">
+                        <path d="M60,90 Q40,60 70,40 Q100,20 100,60 Q100,20 130,40 Q160,60 140,90 Q170,120 140,140 Q100,160 100,120 Q100,160 60,140 Q30,120 60,90 Z" fill="#E98EAD" opacity="0.85"/>
+                        <path d="M110,110 Q95,85 120,70 Q145,55 145,85 Q145,55 170,70 Q195,85 180,110 Q200,135 175,150 Q145,165 145,135 Q145,165 115,150 Q90,135 110,110 Z" fill="#A78BFA" opacity="0.75"/>
+                        <path d="M50,130 Q35,110 55,95 Q75,80 75,105 Q75,80 95,95 Q115,110 100,130 Q115,150 95,165 Q75,180 75,150 Q75,180 55,165 Q35,150 50,130 Z" fill="#F472B6" opacity="0.8"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3 fade-up text-center md:text-left">
+                <p class="text-xs sm:text-sm text-stone-700 leading-relaxed font-normal text-justify md:text-left">
+                    Flowers have always been a beautiful symbol of love, growth, and new beginnings. Just like our relationship, they remind us that with care, patience, and love, something beautiful can bloom. Thank you for celebrating this special day with us.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-tan text-stone-900 py-16 md:py-24 px-6 md:px-12 lg:px-24">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            <div class="w-full md:w-1/2 flex justify-center order-2 md:order-1 fade-up">
+                <div class="bg-[#F5F2EB] p-4 shadow-2xl border border-stone-300/60 max-w-[320px] w-full transform -rotate-1 hover:rotate-0 transition-all duration-500">
+                    <div class="overflow-hidden bg-stone-200 aspect-[4/3] mb-4">
+                        <img src="image.png" alt="Magnifam Group" class="w-full h-full object-cover object-[50%_59%] scale-[2.1] grayscale tracking-wide transform transition-transform duration-700 hover:scale-[2.2]">
+                    </div>
+                    <div class="h-6 w-24 mx-auto bg-stone-300/20 rounded"></div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 order-1 md:order-2 space-y-4 fade-up">
+                <p class="text-xs sm:text-sm text-stone-900 leading-relaxed font-normal text-justify">
+                    I first noticed her during Magnifam. We were standing on opposite corners, but even from a distance, something about her caught my attention. That simple moment became one of the memories that marked the beginning of my admiration for her.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-16 md:py-24 px-6 md:px-12 lg:px-24 relative">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center fade-up">
+                <div class="relative max-w-[260px] w-full">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-28 h-7 bg-amber-100/70 backdrop-blur-[1px] rotate-1 shadow-sm z-10 border-b border-amber-200/30"></div>
+                    <div class="bg-[#FBF9F4] p-3 pt-5 shadow-xl border border-stone-200 transform rotate-3 hover:rotate-0 transition-all duration-500">
+                        <div class="overflow-hidden bg-stone-100 aspect-square">
+                            <img src="image.png" alt="Sorry Portrait" class="w-full h-full object-cover object-[24%_72%] scale-[2.4] transform transition-transform duration-700 hover:scale-[2.5]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-start fade-up">
+                <div class="w-48 sm:w-56 float-slow opacity-90">
+                    <svg viewBox="0 0 200 100" class="w-full h-full">
+                        <path d="M20,50 C20,20 80,10 140,20 C180,27 190,50 170,70 C150,85 90,90 50,80 C35,88 20,95 15,92 C22,82 20,75 20,50 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <text x="42" y="58" font-family="sans-serif" font-weight="900" font-size="22" fill="currentColor" transform="rotate(-5 100 50)" letter-spacing="1">SORRY</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-lightCream text-stone-800 py-16 md:py-24 px-6 md:px-12 lg:px-32">
+        <div class="max-w-3xl mx-auto space-y-6 fade-up">
+            <p class="text-xs sm:text-sm font-medium tracking-wide text-stone-900">
+                Sorry, Pyang,
+            </p>
+            <div class="text-xs sm:text-sm text-stone-700 leading-relaxed space-y-5 font-normal text-justify">
+                <p>
+                    I want to sincerely apologize for making you feel angry and, more importantly, for making you feel undervalued. It was never my intention to hurt you or make you question how important you are to me. Looking back, I realize that the way I delivered my words wasn't thoughtful enough, and because of that, they came across differently from what I truly meant.
+                </p>
+                <p>
+                    I'm also sorry for the misunderstanding between us. I know that misunderstandings happen, but I should have communicated more clearly instead of letting things become confusing and painful. I should have been more sensitive to your feelings, and I take responsibility for my part in it.
+                </p>
+                <p>
+                    Please know that I value you so much, and it hurts me knowing that my words made you feel otherwise. You deserve to feel appreciated, respected, and loved, and I'm sorry that I failed to make you feel that way.
+                </p>
+                <p>
+                    I can't change what has already happened, but I promise to be more careful with my words and to communicate better from now on. Thank you for being patient with me, and I hope you'll find it in your heart to forgive me. No matter what, I never want you to doubt your worth in my life.
+                </p>
+            </div>
+            <p class="text-xs sm:text-sm font-medium tracking-wide text-stone-900 pt-4">
+                I'm truly sorry, Pyang.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
